@@ -1,0 +1,3 @@
+[submodule "poolPiServer"]
+	path = poolPiServer
+	url = git@linuxserver:poolPiServer
