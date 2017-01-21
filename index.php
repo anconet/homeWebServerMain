@@ -26,3 +26,12 @@
 <a href="./poolPiServer/main.php">Pool Pi HTML Test Page</a>
 </body>
 </html>
+
+<?php
+echo"";
+echo "<h1>DNS Table</h1><br>";
+$fileContents = file("/var/lib/misc/dnsmasq.leases");
+foreach ($fileContents as $line) {
+	echo "<p>$line</p>";
+}
+?>
